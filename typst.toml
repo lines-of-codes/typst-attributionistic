@@ -1,0 +1,8 @@
+[package]
+name = "image-credits"
+version = "0.1.0"
+entrypoint = "lib.typ"
+authors = ["Satakun Utama <https://github.com/lines-of-codes/>"]
+license = "MIT"
+description = "Gather attributed figures and create image attributions section"
+exclude = ["imgs/*"]
