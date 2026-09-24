@@ -1,10 +1,12 @@
-# Image Credits
+# Attributionistic
+
+(Yes, This is my attempt of creating a unique name)
 
 Use `#afigure` to create a figure with attribution information, then display a
-list of attributions with `#image-credits`
+list of attributions with `#figure-credits`
 
 ```typst
-#import "@preview/image-credits:0.1.0": afigure, image-credits
+#import "@preview/attributionistic:0.1.0": afigure, figure-credits
 
 #afigure(
     image("duck.jpg"),
@@ -17,7 +19,7 @@ list of attributions with `#image-credits`
 // Reduce the spacing between the caption and the attribution
 #show figure.caption: set block(below: 0.6em)
 
-#image-credits()
+#figure-credits()
 ```
 
 ![Using the package](imgs/normal.png)
@@ -28,7 +30,7 @@ Use with the `i-figured` package is also possible by providing the
 `kind: "i-figured-image"` argument
 
 ```typst
-#image-credits(kind: "i-figured-image")
+#figure-credits(kind: "i-figured-image")
 ```
 
 `image` can be replaced with any other figure kind, so this works with tables
@@ -36,10 +38,15 @@ too by providing `kind: "i-figured-table"`
 
 ![Using the package with i-figured](imgs/i-figured.png)
 
+## Quirk
+
+Note that this library makes use of a label named `<afig>` to mark , using that label
+will interfere with the library so please don't.
+
 ## API
 
 ```typst
-#let image-credits(
+#let figure-credits(
     kind: image,
     template: default-entry
 ) = { /* ... */ }

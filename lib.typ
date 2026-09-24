@@ -19,7 +19,7 @@
   })
 }
 
-#let image-credits(kind: image, template: default-entry) = context {
+#let figure-credits(kind: image, template: default-entry) = context {
   let figures = query(figure.where(kind: kind))
   let attributions = query(<afig>)
   let offset = 0
