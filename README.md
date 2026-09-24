@@ -40,8 +40,8 @@ too by providing `kind: "i-figured-table"`
 
 ## Quirk
 
-Note that this library makes use of a label named `<afig>` to mark , using that label
-will interfere with the library so please don't.
+Note that this library makes use of a label named `<afig>` to mark attributed figures, using that label
+will interfere with the library so please don't use it.
 
 ## API
 
